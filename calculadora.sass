@@ -1,0 +1,87 @@
+@import "_variaveis.sass"
+    
+.container
+    min-width: 100dvw
+    min-height: 100%
+    background: transparent
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .content
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        
+        .fundo 
+            width: 420px
+            height: 500px
+            background: #ffffff2d
+            border-radius: 15px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            .fundo-titulo
+                width: 100%
+                height: 50px
+                padding: .5em
+                background: transparent
+                display: flex
+                justify-content: center
+                align-items: center
+
+                h1 
+                    text-align: center
+                    color: $text-color
+            
+            #calculadora 
+                width: 100%
+                height: calc( 100% - 50px) 
+                padding: 1.2em .8em
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+
+                .resultado-div
+                    width: 100%
+                    height: 50px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border: 1px solid #fff
+
+                    #resultado 
+                        width: 100%
+                        height: 100%
+                        padding: 0 .5rem
+                        font-size: 20px
+                        color: $text-color
+                        background: transparent
+                        display: flex
+                        justify-content: flex-end
+                        align-items: center
+                
+
+                table 
+                    width: 100%
+                    height: calc( 100% - 50px )
+
+                    tr 
+                        td 
+                            button 
+                                width: 100%
+                                min-height: 100%
+                                padding: 1em
+                                color: $text-color
+                                font-size: 20px
+                                background: transparent
+                                border: 1px solid #fff
+
+                            &:active 
+                                background: #5526a1
+                                transition: all .06s ease
